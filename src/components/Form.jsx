@@ -5,7 +5,7 @@ import { Error } from './Error'
 
 export const Form = () => {
 
-  const { handleChangeData, error, setError, data } = useQuote()
+  const { handleChangeData, error, setError, data, quoteInsurance } = useQuote()
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -16,7 +16,7 @@ export const Form = () => {
 
     setError('')
 
-    //Todo: Quote
+    quoteInsurance()
   }
 
   return (

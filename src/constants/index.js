@@ -6,7 +6,7 @@ export const brands = [
 
 const yearMax = new Date().getFullYear()
 
-export const years = Array.from({ length: 50 }, (v, k) => yearMax - k)
+export const years = Array.from({ length: 30 }, (v, k) => yearMax - k)
 
 export const plans = [
   { id: 1, name: 'Basic' },
